@@ -1,11 +1,38 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
+	"pages": [ 
+	{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "首页"
 		}
+	}
+	,{
+		"path" : "pages/myinfo/myinfo",
+		"style" :                                                                                    
+		{
+			"navigationBarTitleText": "我的信息",
+			"enablePullDownRefresh": false
+		}
+		
+	}
+	,{
+		"path" : "pages/news/news",
+		"style" :                                                                                    
+		{
+			"navigationBarTitleText": "新闻",
+			"enablePullDownRefresh": false
+		}
+		
+	}
+	,{
+		"path" : "pages/sci/sci",
+		"style" :                                                                                    
+		{
+			"navigationBarTitleText": "百科",
+			"enablePullDownRefresh": false
+		}
+		
+	}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -13,5 +40,34 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+	    "list": [
+	      {"iconPath":"static/Tabbar/index.png",
+			  "selectedIconPath":"static/Tabbar/index_s.png",
+	        "pagePath": "pages/index/index",
+	        "text": "首页"
+	        
+	      },
+		  {	"iconPath":"static/Tabbar/news.png",
+			  "selectedIconPath":"static/Tabbar/news_s.png",
+		    "pagePath": "pages/news/news",
+		    "text": "新闻"
+			
+		  },
+		  {
+			  "iconPath":"static/Tabbar/sci.png",
+			  "selectedIconPath":"static/Tabbar/sci_s.png",
+		    "pagePath": "pages/sci/sci",
+		    "text": "百科"
+		  },
+		  {	
+			"iconPath":"static/Tabbar/myinfo.png",
+			"selectedIconPath":"static/Tabbar/myinfo_s.png",  
+		    "pagePath": "pages/myinfo/myinfo",
+		    "text": "我的信息"
+		  
+		  }
+	    ]
+	  }
 }

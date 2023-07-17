@@ -10,7 +10,7 @@
 
 <script setup>
 import { ref } from 'vue'
-const title = ref('Hello')
+const title = ref('Hello1')
 </script>
 
 <style>
